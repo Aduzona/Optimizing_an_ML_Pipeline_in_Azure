@@ -24,7 +24,7 @@ We seek to create and optimize an ML Pipeline using this dataset by:
 
 And Compare the results of the 2 methods
 ![Create and Optimize](Creating_Optimize_ML_Pipeline.png)
-[udacity ML Engineer Azure](https://www.udacity.com/course/machine-learning-engineer-for-microsoft-azure-nanodegree--nd00333)
+[image source from udacity ML Engineer Azure](https://www.udacity.com/course/machine-learning-engineer-for-microsoft-azure-nanodegree--nd00333)
 
 In both AUC and Accuracy, AutoML performed better than HyperDrive.
 
