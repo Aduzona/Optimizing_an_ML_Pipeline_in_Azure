@@ -24,6 +24,7 @@ We seek to create and optimize an ML Pipeline using this dataset by:
 
 And Compare the results of the 2 methods
 ![Create and Optimize](Creating_Optimize_ML_Pipeline.png)
+[udacity ML Engineer Azure](https://www.udacity.com/course/machine-learning-engineer-for-microsoft-azure-nanodegree--nd00333)
 
 In both AUC and Accuracy, AutoML performed better than HyperDrive.
 
@@ -74,7 +75,7 @@ BanditPolicy(slack_amount = 0.2,
                                         evaluation_interval=1,
                                         delay_evaluation=5)
 ```
-In the above policy, for every first five iteration, the bandit policy is applied, it stops run if the target metric is 0.2 worse than the best performing run.
+In the above policy, for every first five iteration, the bandit policy is applied, it stops run if the target metric is 0.2 worse than the best performing run.[Microsoft Learn](https://docs.microsoft.com/en-us/learn/modules/tune-hyperparameters-with-azure-machine-learning/4-early-termination)
 
 
 **Scikit-learn Pipeline**
@@ -102,7 +103,7 @@ hyperdrive_config = HyperDriveConfig(run_config=src,#estimator=est,
                                      max_concurrent_runs=4
                                      )
 ```
-ScriptRunConfig that identifies the Python script file to be run in the experiment, and then run an experiment based on it, it also determines compute and python environment defined in the conda yml file.
+ScriptRunConfig that identifies the Python script file to be run in the experiment, and then run an experiment based on it, it also determines compute and python environment defined in the conda yml file.[Github Microsoft Learning](https://github.com/MicrosoftLearning/mslearn-dp100/blob/main/04%20-%20Run%20Experiments.ipynb)
 
 HyperDriveConfig object is used to prepare the hyperdrive experiment. You can create HyperDriveConfig using the ScriptRunConfig object, hyperparameter sampler, and policy. Aim of the Experiment is to maximize Accuracy. max_total_runs set to 6, I restict the experiment to 6 iterations. Also, max_concurrent_run=2, run up to 2 iterations in parallel.
 
@@ -181,3 +182,11 @@ training_cluster.delete()
 ```
 
 ![Delete Cluster](Delete_Cluster.png)
+
+## References
+
+1. [Udacity](Udacity.com)
+2. [Microsoft Learn](https://docs.microsoft.com/en-us/learn/paths/build-ai-solutions-with-azure-ml-service/)
+3. [Github Microsoft Learning](https://github.com/MicrosoftLearning/mslearn-dp100/blob/main/11%20-%20Tune%20Hyperparameters.ipynb)
+4. [Github Microsoft Learning](https://github.com/MicrosoftLearning/mslearn-dp100/blob/main/04%20-%20Run%20Experiments.ipynb)
+5. [udacity ML Engineer Azure](https://www.udacity.com/course/machine-learning-engineer-for-microsoft-azure-nanodegree--nd00333)
